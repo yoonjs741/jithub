@@ -6,6 +6,7 @@ import (
 	"os/exec"
 )
 
+// go exec command using pipes
 func CMDPsWithPipes() {
 	binName := os.Getenv("BIN_NAME")
 	_ = binName
