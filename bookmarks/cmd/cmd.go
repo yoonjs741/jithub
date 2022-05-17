@@ -23,6 +23,5 @@ func CMDPsWithPipes() {
 
 	res, _ := grep.Output()
 
-	fmt.Println(res)
 	fmt.Println(string(res))
 }
