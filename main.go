@@ -9,12 +9,21 @@ func main() {
 	// DoLoopTest()
 	// DoArrPointerStructTest()
 
-	config := &ArrayMe{
-		IntMe: 1,
+	// config := &ArrayMe{
+	// 	IntMe: 1,
+	// }
+
+	// config.SetInt()
+	// fmt.Println("config", config.IntMe)
+
+	str := "&#1692021"
+	var bytes []byte
+	bytes = []byte(str)
+	for _, v := range bytes {
+		fmt.Println(string(v), v)
 	}
 
-	config.SetInt()
-	fmt.Println("config", config.IntMe)
+	fmt.Println(string([]rune{129}))
 
 }
 
